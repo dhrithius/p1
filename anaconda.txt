@@ -1,0 +1,62 @@
+Step 1: Update Your System
+Open your terminal (Ctrl + Alt + T).
+Update the local package index by running:
+
+bash
+
+sudo apt update
+
+
+
+Step 2: Download the Anaconda Installer
+Go to the Anaconda Linux Install Guide or use wget to fetch the latest 64-bit x86 bash script directly.
+Navigate to the /tmp directory or your Downloads folder
+
+bash
+
+cd /tmp
+
+Download the installer file (check the official site for the exact latest filename version)
+
+bash
+
+curl -O https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+
+
+
+Step 3: Verify Installer Integrity (Optional)
+
+Generate the SHA-256 hash of the downloaded file:
+
+bash
+
+sha256sum Anaconda3-2022.05-Linux-x86_64.sh
+
+
+Step 4: Run the Installation Script
+
+bash
+
+bash Anaconda3-2022.05-Linux-x86_64.sh
+
+
+Press Enter to review the license terms, hold Enter to scroll to the end, and type yes to accept the agreement.
+Press Enter to accept the default installation path in your home directory.
+Type yes when prompted to initialize Anaconda (run conda init)
+
+
+Step 5: Activate and Test the Installation
+
+Close and reopen your terminal, or load the configuration changes immediately
+
+bash
+source ~/.bashrc
+
+
+Verify the installation by checking the conda info or listing installed packages:
+
+bash
+conda list
+
+If you see (base) at the start of your command prompt, Anaconda is active
+
